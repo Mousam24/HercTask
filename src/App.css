@@ -1,0 +1,227 @@
+/* index.css or relevant CSS file */
+.box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box form div {
+    margin-bottom: 1rem;
+  }
+  
+  .box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .box input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  .box button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .box button:hover {
+    background-color: #45a049;
+  }
+  /* App.css */
+.toggle-button {
+    background-color: #1e2328;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    position: relative;
+    top: 60px;
+
+    
+  }
+  
+  .toggle-button:hover {
+    background-color: #1c232a;
+  }
+  /* Light Theme Variables */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --button-background: #1e2328;
+    --button-text: white;
+    --button-hover-background: #1e2328;
+  }
+  
+  /* Dark Theme Variables */
+  [data-theme='dark'] {
+    --background-color: #333;
+    --text-color: white;
+    --button-background: #444;
+    --button-text: white;
+    --button-hover-background: #222;
+  }
+  
+  /* Buttons on Boxes*/
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .box {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  button {
+    margin: 2px;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-background);
+  }
+  
+  nav {
+    background-color: var(--background-color);
+    border-bottom: 1px solid #ccc;
+  }
+
+/* flashcardList*/
+
+/* App.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7fafc; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7fafc; 
+  }
+  
+  .all-flashcards-vertical {
+    display: flex;
+    flex-direction: column; /* Arrange flashcards vertically */
+    align-items: center; /* Center flashcards horizontally */
+    justify-content: center; /* Center flashcards vertically */
+    gap: 16px;
+    width: 100%;
+    max-width: 800px; /* Limits the width for better alignment */
+    margin: 0 auto; /* Centers the flashcards container */
+  }
+
+.box {
+  padding: 16px;
+  border: 1px solid #e2e8f0; /* Similar to border color in Tailwind */
+  border-radius: 8px; /* Adds rounded corners */
+  background-color: white; 
+  min-width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #e53e3e; /* Red color for error messages */
+  font-weight: 600;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.loading-message {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.button {
+  margin: 8px; /* Adds space between buttons */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-green {
+  background-color: #48bb78;
+  color: white;
+}
+
+.button-green:hover {
+  background-color: #38a169;
+}
+
+.button-yellow {
+  background-color: #f6e05e;
+  color: white;
+}
+
+.button-yellow:hover {
+  background-color: #ecc94b;
+}
+
+.button-red {
+  background-color: #f56565;
+  color: white;
+}
+
+.button-red:hover {
+  background-color: #e53e3e;
+}
+
+.button-blue {
+  background-color: #4299e1;
+  color: white;
+}
+
+.button-blue:hover {
+  background-color: #3182ce;
+}
+
