@@ -1,74 +1,81 @@
-<<<<<<< HEAD
-# FlashCard-WebApp
-=======
-# Getting Started with Create React App
+# Flashcard Learning App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Overview
 
-## Available Scripts
+The Flashcard Learning App is a web-based application designed to help users create, manage, and review flashcards. The app allows users to add flashcards with questions and answers, view flashcards by categories (boxes), mark them as correct or incorrect, and delete them. Additionally, users can view all flashcards and deleted flashcards on separate pages.
 
-In the project directory, you can run:
+# Features
+Add new flashcards with questions and answers.
+View flashcards by categories (boxes).
 
-### `npm start`
+Mark flashcards as correct or incorrect.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Delete flashcards.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+View all flashcards
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Technologies Used
+React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Axios
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Styled Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React Router
 
-### `npm run eject`
+CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Project Structure
+src/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+components/
 
-## Learn More
+Dashboard.js: Navigation bar component.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Flashcard.js: Flashcard component.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+FlashcardList.js: Component to display flashcards by boxes.
 
-### Code Splitting
+AllFlashcards.js: Component to display all flashcards.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+App.js: Main application component.
 
-### Analyzing the Bundle Size
+App.css: CSS file for styling the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+# Usage
+Adding Flashcards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Navigate to the home page.
 
-### Advanced Configuration
+Fill in the question and answer fields.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Click the "Add Flashcard" button.
 
-### Deployment
+Viewing Flashcards by Boxes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Navigate to the "Flashcard Boxes" page via the navigation bar.
 
-### `npm run build` fails to minify
+Click on a box to view flashcards in that category.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> f4a5c9b (https://github.com/Mousam24/FlashCard-WebApp.git)
+Viewing All Flashcards
+
+Navigate to the "All Flashcards" page via the navigation bar.
+
+All flashcards will be displayed 
+
+Marking Flashcards
+
+View flashcards in any category or on the "All Flashcards" page.
+
+Click "✅ Got it right" or "❌ Got it wrong" to mark the flashcard.
+
+Deleting Flashcards
+
+View flashcards in any category or on the "All Flashcards" page.
+
+Click the "🗑 Delete" button to delete the flashcard.
