@@ -7,7 +7,9 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://herctask-1-l4i4.onrender.com'
+}));
 app.use(bodyParser.json());
 
 mongoose.connect(process.env.MONGO_URI ,{
