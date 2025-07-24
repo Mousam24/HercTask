@@ -7,9 +7,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(cors({
-  origin: 'https://herctask-1-l4i4.onrender.com'
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 mongoose.connect(process.env.MONGO_URI ,{
@@ -83,12 +81,4 @@ app.delete('/api/flashcards/:id', async (req, res) => {
     res.status(500).json({ message: "Error deleting flashcard", error });
   }
 });
-const path = require('path');
-
-app.use(express.static(path.join(__dirname, '../build')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build', 'index.html'));
-});
-
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
