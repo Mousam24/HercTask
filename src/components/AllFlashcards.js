@@ -15,7 +15,7 @@ const AllFlashcards = () => {
   const fetchFlashcards = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("/api/flashcards");
+      const response = await axios.get("https://herctask-8haw.onrender.com/api/flashcards");
       setFlashcards(response.data);
     } catch (err) {
       setError(err);
