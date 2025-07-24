@@ -13,7 +13,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/flashcards', { question, answer });
+      await axios.post('https://herctask-8haw.onrender.com/api/flashcards', { question, answer });
       setQuestion('');
       setAnswer('');
     } catch (error) {

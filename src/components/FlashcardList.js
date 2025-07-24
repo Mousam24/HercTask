@@ -15,7 +15,7 @@ const FlashcardList = () => {
   const fetchFlashcards = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("/api/flashcards");
+      const response = await axios.get("https://herctask-8haw.onrender.com/api/flashcards");
       const groupedFlashcards = response.data.reduce((acc, card) => {
         acc[card.box] = acc[card.box] || [];
         acc[card.box].push(card);

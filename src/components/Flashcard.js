@@ -4,7 +4,7 @@ import axios from 'axios';
 const Flashcard = ({ flashcard, onUpdate }) => {
   const handleUpdate = async (correct) => {
     try {
-      await axios.put(`/api/flashcards/${flashcard._id}`, { correct });
+      await axios.put(`https://herctask-8haw.onrender.com/api/flashcards/${flashcard._id}`, { correct });
       onUpdate();
     } catch (err) {
       console.error("Error updating flashcard:", err);
@@ -13,7 +13,7 @@ const Flashcard = ({ flashcard, onUpdate }) => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/api/flashcards/${flashcard._id}`);
+      await axios.delete(`https://herctask-8haw.onrender.com/api/flashcards/${flashcard._id}`);
       onUpdate();
     } catch (err) {
       console.error("Error deleting flashcard:", err);
